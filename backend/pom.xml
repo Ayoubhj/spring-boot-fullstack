@@ -11,14 +11,13 @@
 	<groupId>com.ayoubhj</groupId>
 	<artifactId>ayoubhj-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<organization>
-		<name>ayoubhj</name>
-		<url>https://ayoubhj.online/</url>
-	</organization>
 	<name>ayoubhj-api</name>
 	<description>Course project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<docker.username>ayoubhj</docker.username>
+		<docker.image.name>ayoubhj-api</docker.image.name>
+		<docker.image.tag/>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -115,14 +114,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>verify</goal>
-						</goals>
-					</execution>
-				</executions>
                 <configuration>
 					 <classesDirectory>${project.build.outputDirectory}</classesDirectory>
 					<includes>
@@ -171,7 +162,7 @@
 						</platforms>
 					</from>
                     <to>
-						<image>docker.io/${project.organization.name}/${project.artifactId}:${project.version}</image>
+						<image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
 						<tags>
 							<tag>latest</tag>
 						</tags>
