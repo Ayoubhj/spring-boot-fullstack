@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "ayoubhj",
-      "image": "ayoubhj/ayoubhj-api:latest",
+      "image": "ayoubhj/ayoubhj-api:10.12.2023.18.53.14",
       "essential": true,
       "memory": 512,
       "portMappings": [
